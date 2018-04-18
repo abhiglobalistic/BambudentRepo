@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Blog Template for Bootstrap</title>
+	<title>Bambudent</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo get_bloginfo( 'template_directory' );?>/blog.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,18 +23,18 @@
 	<div class="blog-masthead">
 		<div class="container">
 			<nav class="blog-nav">
-				<a class="blog-nav-item active" href="#">Bambudent</a>
+				<a class="blog-nav-item active" href="http://localhost:8080/wordpress/">Bambudent</a>
 					<?php wp_list_pages( '&title_li=' ); ?>
 			</nav>
       <div class="right">
-				<span><img id="search" src="https://png.icons8.com/ios/50/ffffff/search-filled.png"></span>
+				<span><img id="search" width="60px" height="60px" src="https://png.icons8.com/ios/50/ffffff/search-filled.png"></span>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-
-    <div class="blog-header">
-	<h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+    <?php echo do_shortcode('[metaslider id="175"]'); ?>
+<!--<div class="blog-header">
+	 <h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 	<p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
-</div>
+</div>-->
